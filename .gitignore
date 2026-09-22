@@ -1,0 +1,13 @@
+build/
+install/
+log/
+.deps/
+faster_lio_output/
+__pycache__/
+
+# Local migration reports and helper scripts
+/EKF_VALIDATION.md
+/VALIDATION.md
+/scripts/
+# Documentation is kept locally; publish only the root README
+/src/**/*.md

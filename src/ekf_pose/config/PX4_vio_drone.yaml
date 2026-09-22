@@ -1,0 +1,37 @@
+/**:
+  ros__parameters:
+    Rr_i:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    tr_i:
+    - 0.0
+    - 0.0
+    - 0.0
+    rotation_imu:
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+    scale_g: 1.0
+    gyro_cov: 0.05
+    acc_cov: 0.2
+    position_cov: 0.01
+    q_rp_cov: 0.01
+    q_yaw_cov: 0.01
+    cutoff_freq: 20.0
+    sample_frequency: 200.0
+    warmup_samples: 1000
+    imu_trans_x: 0.0
+    imu_trans_y: 0.0
+    imu_trans_z: 0.0
+    offset_px: 0.0
+    offset_py: 0.0
+    offset_pz: 0.0
+    child_frame_id: imu
