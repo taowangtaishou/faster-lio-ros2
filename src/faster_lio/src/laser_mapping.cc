@@ -491,8 +491,8 @@ void LaserMapping::ObsModel(state_ikfom &s, esekfom::dyn_share_datastruct<double
 
     Timer::Evaluate(
         [&, this]() {
-            auto R_wl = (s.rot * s.offset_R_L_I).cast<float>();
-            auto t_wl = (s.rot * s.offset_T_L_I + s.pos).cast<float>();
+            const common::M3F R_wl = (s.rot * s.offset_R_L_I).toRotationMatrix().cast<float>();
+            const common::V3F t_wl = (s.rot * s.offset_T_L_I + s.pos).cast<float>();
 
             /** closest surface search and residual computation **/
             std::for_each(std::execution::par_unseq, index.begin(), index.end(), [&](const size_t &i) {
